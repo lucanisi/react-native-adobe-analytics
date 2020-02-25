@@ -38,7 +38,10 @@ export class AdobeAnalyticsAPI {
   static trackTimedActionEnd(action) {
     RNAdobeAnalytics.trackTimedActionEnd(action);
   }
-
+  
+  static setUserIdentifier(identifier) {
+    RNAdobeAnalytics.setUserIdentifier(identifier);
+  }
 
 
 }
