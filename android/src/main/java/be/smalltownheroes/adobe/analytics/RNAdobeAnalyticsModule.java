@@ -101,6 +101,12 @@ public class RNAdobeAnalyticsModule extends ReactContextBaseJavaModule {
 		Log.i("RN-adobe-analytics", "####### trackTimesActionEnd ####### " + action);
 		Analytics.trackTimedActionEnd(action,  new Analytics.TimedActionBlock<Boolean>());
 	}
+	
+	@ReactMethod
+	public void setUserIdentifier(String identifier) {
+		Log.i("RN-adobe-analytics", "####### setUserIdentifier ####### " + identifier);
+		Config.setUserIdentifier(identifier);
+	}
 
 //End of updates
 

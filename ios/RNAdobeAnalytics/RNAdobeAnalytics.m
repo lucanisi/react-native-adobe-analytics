@@ -61,7 +61,8 @@ RCT_EXPORT_METHOD(trackTimedActionEnd: (NSString *)action) {
     [ADBMobile trackTimedActionEnd:action logic: nil];
 }
 
-
-
+RCT_EXPORT_METHOD(setUserIdentifier: (NSString *)identifier) {
+    [ADBMobile setUserIdentifier:identifier];
+}
 
 @end
